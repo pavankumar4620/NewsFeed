@@ -69,12 +69,6 @@ class LoginViewController: UIViewController {
             return
         }
         
-      /* if emailIdTxtField.text!.count <= 1 || pwdTxtField.text!.count <= 1 {
-            print("=== Please enter all the fields ===")
-            self.alertViewShow("Alert", "Please Fill All The Fields")
-            return
-        }
- */
         if !self.isValidEmail(emailStr: emailIdTxtField.text!) {
             self.alertViewShow("Alert", "EmailId Format is wrong")
             return
@@ -135,6 +129,7 @@ extension LoginViewController: APIResponse{
             DispatchQueue.main.async {
                 UserDefaults.standard.set(self.emailIdTxtField.text, forKey: "emailID")
                 UserDefaults.standard.set(user["api_token"] as! String, forKey: "api_token")
+                self.clearData()
                 let newsFeedVC =  self.storyboard?.instantiateViewController(withIdentifier:"NewsFeedListViewController") as! NewsFeedListViewController
                 self.navigationController?.pushViewController(newsFeedVC, animated: true)
                 

@@ -23,9 +23,7 @@ class NewsFeedListViewController: UIViewController {
         // Do any additional setup after loading the view.
         serviceCall.apiReponseProtocol = self
         self.registerNib()
-        
         self.getNewsList(urlStr: Constants.mainURL + "/kstream")
-        
     }
     
     func registerNib() {
