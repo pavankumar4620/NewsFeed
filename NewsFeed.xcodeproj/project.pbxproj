@@ -23,7 +23,6 @@
 		D786C2D5233230B7001E8C11 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D786C2D4233230B7001E8C11 /* NewsFeedCell.swift */; };
 		D7947DD923332B0C00B236FB /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7947DD823332B0C00B236FB /* LoadingCell.xib */; };
 		D7947DDB23332B2B00B236FB /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7947DDA23332B2B00B236FB /* LoadingCell.swift */; };
-		D7947DDD2333357E00B236FB /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D7947DDC2333357E00B236FB /* bg.png */; };
 		D7947DE8233367C700B236FB /* breakingnews.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7947DE7233367C700B236FB /* breakingnews.jpg */; };
 		D7947DEA2333734800B236FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7947DE92333734800B236FB /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +48,6 @@
 		D786C2D4233230B7001E8C11 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		D7947DD823332B0C00B236FB /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		D7947DDA23332B2B00B236FB /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
-		D7947DDC2333357E00B236FB /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = ../../ChatStyles/ChatStyles/Images/bg.png; sourceTree = "<group>"; };
 		D7947DE7233367C700B236FB /* breakingnews.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breakingnews.jpg; sourceTree = "<group>"; };
 		D7947DE92333734800B236FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +114,6 @@
 				D786C2BD2331E215001E8C11 /* Assets.xcassets */,
 				D786C2BF2331E215001E8C11 /* LaunchScreen.storyboard */,
 				D786C2C22331E215001E8C11 /* Info.plist */,
-				D7947DDC2333357E00B236FB /* bg.png */,
 				D7947DE7233367C700B236FB /* breakingnews.jpg */,
 			);
 			path = NewsFeed;
@@ -262,7 +259,6 @@
 				D786C2C12331E215001E8C11 /* LaunchScreen.storyboard in Resources */,
 				D786C2BE2331E215001E8C11 /* Assets.xcassets in Resources */,
 				D7947DE8233367C700B236FB /* breakingnews.jpg in Resources */,
-				D7947DDD2333357E00B236FB /* bg.png in Resources */,
 				D786C2D323322EC7001E8C11 /* NewsFeedCell.xib in Resources */,
 				D7947DD923332B0C00B236FB /* LoadingCell.xib in Resources */,
 				D786C2B92331E213001E8C11 /* Main.storyboard in Resources */,
