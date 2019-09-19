@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadingCell" id="HNx-Ag-cFi" customClass="LoadingCell" customModule="NewsFeed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HNx-Ag-cFi" id="ecT-rz-TZG">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nL7-Hg-Cbb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nL7-Hg-Cbb" firstAttribute="width" secondItem="ecT-rz-TZG" secondAttribute="width" id="5NY-fD-LCv"/>
+                    <constraint firstItem="nL7-Hg-Cbb" firstAttribute="centerY" secondItem="ecT-rz-TZG" secondAttribute="centerY" id="CVt-L1-Rhl"/>
+                    <constraint firstItem="nL7-Hg-Cbb" firstAttribute="centerX" secondItem="ecT-rz-TZG" secondAttribute="centerX" id="gQZ-FM-wJ1"/>
+                    <constraint firstItem="nL7-Hg-Cbb" firstAttribute="height" secondItem="ecT-rz-TZG" secondAttribute="height" id="uPi-fr-b7P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="spinner" destination="nL7-Hg-Cbb" id="ynK-Sh-VdR"/>
+            </connections>
+            <point key="canvasLocation" x="-412" y="133"/>
+        </tableViewCell>
+    </objects>
+</document>
