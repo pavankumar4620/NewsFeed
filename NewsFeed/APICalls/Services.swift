@@ -49,14 +49,14 @@ class Services: NSObject {
             }.resume()
     }
     
-    func newsFeedList(url urlStr: String, body: NSDictionary, requestStr: String, autorisation : String) {
+    func newsFeedList(url urlStr: String, body: NSDictionary, requestStr: String, apitoken : String) {
         let Url = String(format: urlStr)
         guard let serviceUrl = URL(string: Url) else { return }
         var request = URLRequest(url: serviceUrl)
         
         let headers = [
             "Accept": "application/json",
-            "Authorization": "Bearer H5X1Hmd9GasItkzZMI5tElzcHds9KEQiIBI8KOXNBhDhPuvWWHBvGabUlxf7"]
+            "Authorization": apitoken]
         
         request.httpMethod = requestStr
         request.allHTTPHeaderFields = headers
@@ -67,15 +67,10 @@ class Services: NSObject {
           
             if let data = data {
                 do {
-                  //  let json = try JSONSerialization.jsonObject(with: Data(data), options: [.allowFragments, .mutableContainers])
-                    
                     let responseData = try JSONDecoder().decode(News.self, from: data)
-                  //  print("response data:", responseData.kstream.data[0].title)
-                  //  completion(News)
                     self.apiReponseProtocol?.successResponse(response: responseData)
                     
                 } catch {
-                    //completion(News(), error)
                     print("=== error ===", error)
                     self.apiReponseProtocol?.errorResponse(error: error as NSError)
                 }

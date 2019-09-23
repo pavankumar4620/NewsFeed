@@ -36,7 +36,7 @@ class NewsFeedListViewController: UIViewController {
     func getNewsList(urlStr:String) {
         var apitoken = "Bearer "
         apitoken += String(UserDefaults.standard.value(forKey: "api_token") as! String)
-        serviceCall.newsFeedList(url: urlStr, body: NSDictionary(), requestStr: "GET",autorisation:  apitoken)
+        serviceCall.newsFeedList(url: urlStr, body: NSDictionary(), requestStr: "GET",apitoken:  apitoken)
     }
 }
 

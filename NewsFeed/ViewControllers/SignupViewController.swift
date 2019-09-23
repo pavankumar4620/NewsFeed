@@ -72,9 +72,7 @@ class SignupViewController: UIViewController {
         let parameterDictionary = ["name" : usernameTxtField.text, "email" : emailIdTxtField.text, "password": pwdTxtField.text,"password_confirmation":confirmPwdTxtField.text, "mobile":mobileNumberTxtField.text, "gender": genderTxtField.text]
         
         self.spinnerAnimation()
-        
         serviceCall.signupServiceCall(url: Constants.mainURL + "/register", body: parameterDictionary as NSDictionary, requestStr: "POST")
-      
     }
 }
 
@@ -110,7 +108,7 @@ extension SignupViewController:UIPickerViewDelegate, UIPickerViewDataSource {
     }
 }
 
-extension SignupViewController: APIResponse{
+extension SignupViewController: APIResponse {
     func errorResponse(error : NSError) {
         print("=== Error Response ===", error)
         self.spinnerAnimation()
@@ -128,7 +126,6 @@ extension SignupViewController: APIResponse{
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.navigationController?.popViewController(animated: true)
             }
-        
         }
     }
 }
